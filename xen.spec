@@ -136,6 +136,7 @@ Requires: xen-runtime = %{version}-%{release}
 # installs xen.
 Requires: kpartx
 Requires: chkconfig
+Requires: xen-devel
 ExclusiveArch: %{ix86} x86_64 ia64
 #ExclusiveArch: %{ix86} x86_64 ia64 noarch
 
