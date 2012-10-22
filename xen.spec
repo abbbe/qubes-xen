@@ -136,7 +136,6 @@ Requires: xen-runtime = %{version}-%{release}
 # installs xen.
 Requires: kpartx
 Requires: chkconfig
-Requires: xen-devel
 ExclusiveArch: %{ix86} x86_64 ia64
 #ExclusiveArch: %{ix86} x86_64 ia64 noarch
 
@@ -160,6 +159,7 @@ which manage Xen virtual machines.
 %package qubes-vm-essentials
 Summary: Minimal xen-runtime to be installed inside Qubes VMs
 Requires: xen-libs = %{version}-%{release}
+Requires: xen-devel
 AutoReq: 0
 %description qubes-vm-essentials
 Just a few xenstore-* tools and hotplug scripts needed by Qubes VMs (including netvm)
